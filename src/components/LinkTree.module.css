@@ -1,0 +1,49 @@
+.LinkMainDiv {
+  background-color: tomato;
+  width: 200px;
+  min-height: 50px;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+.LinkMainDiv:hover .LinkImage {
+  opacity: 1;
+}
+
+.LinkMainDiv:hover .LinkExternalDiv {
+  height: 30px;
+  opacity: 1;
+}
+
+.LinkNameDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  /* background-color: cyan; */
+}
+
+.LinkImage {
+  position: absolute;
+  right: calc(100% - 10px);
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  width: 50px;
+  height: 50px;
+  padding-right: 10px;
+  background-color: blueviolet;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.LinkExternalDiv {
+  position: relative;
+  opacity: 0;
+  height: 0px;
+  transition: all 0.3s ease-in-out;
+  background-color: wheat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
